@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="theme-toggle">Toggle Theme</button>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Hello, I'm <span id="typing"></span></h1>
+      <p>Front-End Developer | Aspiring Innovator</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a passionate front-end developer with a love for creating beautiful, responsive websites.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="filter">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="web">Web Development</button>
+        <button class="filter-btn" data-category="app">App Development</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="web">
+          <h3>Portfolio Website</h3>
+          <p>Created with HTML, CSS, and JavaScript.</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Sameera Begum. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
